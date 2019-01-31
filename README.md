@@ -50,11 +50,11 @@
 
 ### 前端
 
-在项目根路径下执行 `npm run dev` 打开浏览器 `localhost:8080`
+在项目根路径下执行 `npm start` 打开浏览器 `localhost:8080`
 
 ### 后端
 
-在项目根路径下执行 `cd ./server && node ./bin/www`
+在项目根路径下执行 `npm run server`
 
 ### mongodb 数据库
 

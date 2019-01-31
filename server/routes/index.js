@@ -8,15 +8,15 @@ const mongoose = require('mongoose')
 
 switch (process.env.NODE_ENV) {
   case 'test':
-    mongoose.connect('mongodb://127.0.0.1:27017/vue_koa_todos_test')
+    mongoose.connect('mongodb://47.111.77.29:27017/vue_koa_todos',{ useNewUrlParser: true })
     break
   /* istanbul ignore next */
   case 'dev':
-    mongoose.connect('mongodb://127.0.0.1:27017/vue_koa_todos')
+    mongoose.connect('mongodb://47.111.77.29:27017/vue_koa_todos',{ useNewUrlParser: true })
     break
   /* istanbul ignore next */
   default:
-    mongoose.connect('mongodb://vue_koa_todos_owner:aliyunVueKoaTodos@127.0.0.1:27017/vue_koa_todos')
+    mongoose.connect('mongodb://47.111.77.29:27017/vue_koa_todos',{ useNewUrlParser: true })
 }
 mongoose.connection.on('connected', () => { console.log('MongoDB connected success') })
 

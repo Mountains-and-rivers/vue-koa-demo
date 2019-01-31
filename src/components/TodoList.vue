@@ -30,7 +30,7 @@
         </div>
       </li>
     </ul>
-    <p class="encourage" v-if="todoTotal === 0">空的日程列表</p>
+    <p class="encourage" v-if="todoTotal === 0">前后端分离【前端请求被代理到服务端】</p>
     <div class="pagination-container">
       <el-pagination v-if="todoTotal !== 0" :current-page.sync="page" @current-change="getTodoList" layout="prev, pager, next" :page-size="8" :total="todoTotal"></el-pagination>
     </div>
